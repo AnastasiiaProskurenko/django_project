@@ -18,16 +18,16 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from project import views as projects_views
+# from project import views as projects_views
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('api/v1/projects', projects_views.list_projects, name='list_projects'),
-    path('api/v1/tasks', projects_views.all_or_tasks_details, name='info_about_task'),
-    path('api/v1/tasks/<str:name>', projects_views.all_or_tasks_details, name='info_about_task'),
-    path('api/v1/tags', projects_views.all_tags, name='list_tags'),
-    path('api/v1/tags/<int:tag_id>', projects_views.tag_details, name='info_about_tag'),
-    path('api/v1/tags/<int:tag_id>/update/', projects_views.tag_update, name='update_tag'),
+    # path('api/v1/projects', projects_views.list_projects, name='list_projects'),
+    # path('api/v1/tasks', projects_views.all_or_tasks_details, name='info_about_task'),
+    # path('api/v1/tasks/<str:name>', projects_views.all_or_tasks_details, name='info_about_task'),
+    # path('api/v1/tags', projects_views.all_tags, name='list_tags'),
+    # path('api/v1/tags/<int:tag_id>', projects_views.tag_details, name='info_about_tag'),
+    # path('api/v1/tags/<int:tag_id>/update/', projects_views.tag_update, name='update_tag'),
 
 
 ]
